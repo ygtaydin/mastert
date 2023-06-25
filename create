@@ -1,0 +1,9 @@
+string str = Console.ReadLine();
+ 
+            int totalCharacter = 0, totalLetterChar = 0, totalDigitChar = 0, totalSpecialChar = 0;
+ 
+            char[] strArray = str.ToCharArray();
+            foreach (var item in strArray)
+            {
+                if (char.IsDigit(item))
+                    totalDigitChar++;
